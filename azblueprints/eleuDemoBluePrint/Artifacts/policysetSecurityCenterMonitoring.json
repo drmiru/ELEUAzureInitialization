@@ -1,0 +1,384 @@
+{
+    "kind":  "policyAssignment",
+    "properties":  {
+                       "displayName":  "Enable Monitoring in Azure Security Center",
+                       "dependsOn":  [
+
+                                     ],
+                       "policyDefinitionId":  "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
+                       "parameters":  {
+                                          "vmssSystemUpdatesMonitoringEffect":  {
+                                                                                    "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_vmssSystemUpdatesMonitoringEffect')]"
+                                                                                },
+                                          "vmssEndpointProtectionMonitoringEffect":  {
+                                                                                         "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_vmssEndpointProtectionMonitoringEffect')]"
+                                                                                     },
+                                          "vmssOsVulnerabilitiesMonitoringEffect":  {
+                                                                                        "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_vmssOsVulnerabilitiesMonitoringEffect')]"
+                                                                                    },
+                                          "systemUpdatesMonitoringEffect":  {
+                                                                                "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_systemUpdatesMonitoringEffect')]"
+                                                                            },
+                                          "systemConfigurationsMonitoringEffect":  {
+                                                                                       "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_systemConfigurationsMonitoringEffect')]"
+                                                                                   },
+                                          "endpointProtectionMonitoringEffect":  {
+                                                                                     "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_endpointProtectionMonitoringEffect')]"
+                                                                                 },
+                                          "diskEncryptionMonitoringEffect":  {
+                                                                                 "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diskEncryptionMonitoringEffect')]"
+                                                                             },
+                                          "networkSecurityGroupsMonitoringEffect":  {
+                                                                                        "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_networkSecurityGroupsMonitoringEffect')]"
+                                                                                    },
+                                          "networkSecurityGroupsOnSubnetsMonitoringEffect":  {
+                                                                                                 "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_networkSecurityGroupsOnSubnetsMonitoringEffect')]"
+                                                                                             },
+                                          "networkSecurityGroupsOnVirtualMachinesMonitoringEffect":  {
+                                                                                                         "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_networkSecurityGroupsOnVirtualMachinesMonitoringEffect')]"
+                                                                                                     },
+                                          "webApplicationFirewallMonitoringEffect":  {
+                                                                                         "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_webApplicationFirewallMonitoringEffect')]"
+                                                                                     },
+                                          "nextGenerationFirewallMonitoringEffect":  {
+                                                                                         "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_nextGenerationFirewallMonitoringEffect')]"
+                                                                                     },
+                                          "vulnerabilityAssesmentMonitoringEffect":  {
+                                                                                         "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_vulnerabilityAssesmentMonitoringEffect')]"
+                                                                                     },
+                                          "serverVulnerabilityAssessmentEffect":  {
+                                                                                      "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_serverVulnerabilityAssessmentEffect')]"
+                                                                                  },
+                                          "storageEncryptionMonitoringEffect":  {
+                                                                                    "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_storageEncryptionMonitoringEffect')]"
+                                                                                },
+                                          "jitNetworkAccessMonitoringEffect":  {
+                                                                                   "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_jitNetworkAccessMonitoringEffect')]"
+                                                                               },
+                                          "adaptiveApplicationControlsMonitoringEffect":  {
+                                                                                              "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_adaptiveApplicationControlsMonitoringEffect')]"
+                                                                                          },
+                                          "sqlAuditingMonitoringEffect":  {
+                                                                              "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_sqlAuditingMonitoringEffect')]"
+                                                                          },
+                                          "sqlEncryptionMonitoringEffect":  {
+                                                                                "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_sqlEncryptionMonitoringEffect')]"
+                                                                            },
+                                          "sqlDbEncryptionMonitoringEffect":  {
+                                                                                  "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_sqlDbEncryptionMonitoringEffect')]"
+                                                                              },
+                                          "sqlServerAuditingMonitoringEffect":  {
+                                                                                    "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_sqlServerAuditingMonitoringEffect')]"
+                                                                                },
+                                          "sqlServerAuditingActionsAndGroupsMonitoringEffect":  {
+                                                                                                    "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_sqlServerAuditingActionsAndGroupsMonitoringEffect')]"
+                                                                                                },
+                                          "SqlServerAuditingRetentionDaysMonitoringEffect":  {
+                                                                                                 "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_SqlServerAuditingRetentionDaysMonitoringEffect')]"
+                                                                                             },
+                                          "diagnosticsLogsInAppServiceMonitoringEffect":  {
+                                                                                              "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInAppServiceMonitoringEffect')]"
+                                                                                          },
+                                          "diagnosticsLogsInSelectiveAppServicesMonitoringEffect":  {
+                                                                                                        "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInSelectiveAppServicesMonitoringEffect')]"
+                                                                                                    },
+                                          "encryptionOfAutomationAccountMonitoringEffect":  {
+                                                                                                "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_encryptionOfAutomationAccountMonitoringEffect')]"
+                                                                                            },
+                                          "diagnosticsLogsInBatchAccountMonitoringEffect":  {
+                                                                                                "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInBatchAccountMonitoringEffect')]"
+                                                                                            },
+                                          "diagnosticsLogsInBatchAccountRetentionDays":  {
+                                                                                             "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInBatchAccountRetentionDays')]"
+                                                                                         },
+                                          "metricAlertsInBatchAccountMonitoringEffect":  {
+                                                                                             "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_metricAlertsInBatchAccountMonitoringEffect')]"
+                                                                                         },
+                                          "classicComputeVMsMonitoringEffect":  {
+                                                                                    "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_classicComputeVMsMonitoringEffect')]"
+                                                                                },
+                                          "classicStorageAccountsMonitoringEffect":  {
+                                                                                         "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_classicStorageAccountsMonitoringEffect')]"
+                                                                                     },
+                                          "diagnosticsLogsInDataLakeAnalyticsMonitoringEffect":  {
+                                                                                                     "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInDataLakeAnalyticsMonitoringEffect')]"
+                                                                                                 },
+                                          "diagnosticsLogsInDataLakeAnalyticsRetentionDays":  {
+                                                                                                  "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInDataLakeAnalyticsRetentionDays')]"
+                                                                                              },
+                                          "diagnosticsLogsInDataLakeStoreMonitoringEffect":  {
+                                                                                                 "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInDataLakeStoreMonitoringEffect')]"
+                                                                                             },
+                                          "diagnosticsLogsInDataLakeStoreRetentionDays":  {
+                                                                                              "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInDataLakeStoreRetentionDays')]"
+                                                                                          },
+                                          "diagnosticsLogsInEventHubMonitoringEffect":  {
+                                                                                            "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInEventHubMonitoringEffect')]"
+                                                                                        },
+                                          "diagnosticsLogsInEventHubRetentionDays":  {
+                                                                                         "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInEventHubRetentionDays')]"
+                                                                                     },
+                                          "diagnosticsLogsInKeyVaultMonitoringEffect":  {
+                                                                                            "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInKeyVaultMonitoringEffect')]"
+                                                                                        },
+                                          "diagnosticsLogsInKeyVaultRetentionDays":  {
+                                                                                         "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInKeyVaultRetentionDays')]"
+                                                                                     },
+                                          "diagnosticsLogsInLogicAppsMonitoringEffect":  {
+                                                                                             "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInLogicAppsMonitoringEffect')]"
+                                                                                         },
+                                          "diagnosticsLogsInLogicAppsRetentionDays":  {
+                                                                                          "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInLogicAppsRetentionDays')]"
+                                                                                      },
+                                          "diagnosticsLogsInRedisCacheMonitoringEffect":  {
+                                                                                              "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInRedisCacheMonitoringEffect')]"
+                                                                                          },
+                                          "diagnosticsLogsInSearchServiceMonitoringEffect":  {
+                                                                                                 "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInSearchServiceMonitoringEffect')]"
+                                                                                             },
+                                          "diagnosticsLogsInSearchServiceRetentionDays":  {
+                                                                                              "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInSearchServiceRetentionDays')]"
+                                                                                          },
+                                          "aadAuthenticationInServiceFabricMonitoringEffect":  {
+                                                                                                   "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_aadAuthenticationInServiceFabricMonitoringEffect')]"
+                                                                                               },
+                                          "clusterProtectionLevelInServiceFabricMonitoringEffect":  {
+                                                                                                        "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_clusterProtectionLevelInServiceFabricMonitoringEffect')]"
+                                                                                                    },
+                                          "diagnosticsLogsInServiceBusMonitoringEffect":  {
+                                                                                              "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInServiceBusMonitoringEffect')]"
+                                                                                          },
+                                          "diagnosticsLogsInServiceBusRetentionDays":  {
+                                                                                           "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInServiceBusRetentionDays')]"
+                                                                                       },
+                                          "namespaceAuthorizationRulesInServiceBusMonitoringEffect":  {
+                                                                                                          "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_namespaceAuthorizationRulesInServiceBusMonitoringEffect')]"
+                                                                                                      },
+                                          "aadAuthenticationInSqlServerMonitoringEffect":  {
+                                                                                               "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_aadAuthenticationInSqlServerMonitoringEffect')]"
+                                                                                           },
+                                          "secureTransferToStorageAccountMonitoringEffect":  {
+                                                                                                 "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_secureTransferToStorageAccountMonitoringEffect')]"
+                                                                                             },
+                                          "diagnosticsLogsInStreamAnalyticsMonitoringEffect":  {
+                                                                                                   "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInStreamAnalyticsMonitoringEffect')]"
+                                                                                               },
+                                          "diagnosticsLogsInStreamAnalyticsRetentionDays":  {
+                                                                                                "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInStreamAnalyticsRetentionDays')]"
+                                                                                            },
+                                          "useRbacRulesMonitoringEffect":  {
+                                                                               "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_useRbacRulesMonitoringEffect')]"
+                                                                           },
+                                          "disableUnrestrictedNetworkToStorageAccountMonitoringEffect":  {
+                                                                                                             "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_disableUnrestrictedNetworkToStorageAccountMonitoringEffect')]"
+                                                                                                         },
+                                          "diagnosticsLogsInServiceFabricMonitoringEffect":  {
+                                                                                                 "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInServiceFabricMonitoringEffect')]"
+                                                                                             },
+                                          "accessRulesInEventHubNamespaceMonitoringEffect":  {
+                                                                                                 "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_accessRulesInEventHubNamespaceMonitoringEffect')]"
+                                                                                             },
+                                          "accessRulesInEventHubMonitoringEffect":  {
+                                                                                        "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_accessRulesInEventHubMonitoringEffect')]"
+                                                                                    },
+                                          "sqlDbVulnerabilityAssesmentMonitoringEffect":  {
+                                                                                              "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_sqlDbVulnerabilityAssesmentMonitoringEffect')]"
+                                                                                          },
+                                          "sqlDbDataClassificationMonitoringEffect":  {
+                                                                                          "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_sqlDbDataClassificationMonitoringEffect')]"
+                                                                                      },
+                                          "identityDesignateLessThanOwnersMonitoringEffect":  {
+                                                                                                  "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_identityDesignateLessThanOwnersMonitoringEffect')]"
+                                                                                              },
+                                          "identityDesignateMoreThanOneOwnerMonitoringEffect":  {
+                                                                                                    "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_identityDesignateMoreThanOneOwnerMonitoringEffect')]"
+                                                                                                },
+                                          "identityEnableMFAForOwnerPermissionsMonitoringEffect":  {
+                                                                                                       "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_identityEnableMFAForOwnerPermissionsMonitoringEffect')]"
+                                                                                                   },
+                                          "identityEnableMFAForWritePermissionsMonitoringEffect":  {
+                                                                                                       "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_identityEnableMFAForWritePermissionsMonitoringEffect')]"
+                                                                                                   },
+                                          "identityEnableMFAForReadPermissionsMonitoringEffect":  {
+                                                                                                      "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_identityEnableMFAForReadPermissionsMonitoringEffect')]"
+                                                                                                  },
+                                          "identityRemoveDeprecatedAccountWithOwnerPermissionsMonitoringEffect":  {
+                                                                                                                      "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_identityRemoveDeprecatedAccountWithOwnerPermissionsMonitoringEffect')]"
+                                                                                                                  },
+                                          "identityRemoveDeprecatedAccountMonitoringEffect":  {
+                                                                                                  "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_identityRemoveDeprecatedAccountMonitoringEffect')]"
+                                                                                              },
+                                          "identityRemoveExternalAccountWithOwnerPermissionsMonitoringEffect":  {
+                                                                                                                    "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_identityRemoveExternalAccountWithOwnerPermissionsMonitoringEffect')]"
+                                                                                                                },
+                                          "identityRemoveExternalAccountWithWritePermissionsMonitoringEffect":  {
+                                                                                                                    "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_identityRemoveExternalAccountWithWritePermissionsMonitoringEffect')]"
+                                                                                                                },
+                                          "identityRemoveExternalAccountWithReadPermissionsMonitoringEffect":  {
+                                                                                                                   "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_identityRemoveExternalAccountWithReadPermissionsMonitoringEffect')]"
+                                                                                                               },
+                                          "apiAppConfigureIPRestrictionsMonitoringEffect":  {
+                                                                                                "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_apiAppConfigureIPRestrictionsMonitoringEffect')]"
+                                                                                            },
+                                          "functionAppConfigureIPRestrictionsMonitoringEffect":  {
+                                                                                                     "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_functionAppConfigureIPRestrictionsMonitoringEffect')]"
+                                                                                                 },
+                                          "webAppConfigureIPRestrictionsMonitoringEffect":  {
+                                                                                                "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_webAppConfigureIPRestrictionsMonitoringEffect')]"
+                                                                                            },
+                                          "apiAppDisableRemoteDebuggingMonitoringEffect":  {
+                                                                                               "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_apiAppDisableRemoteDebuggingMonitoringEffect')]"
+                                                                                           },
+                                          "functionAppDisableRemoteDebuggingMonitoringEffect":  {
+                                                                                                    "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_functionAppDisableRemoteDebuggingMonitoringEffect')]"
+                                                                                                },
+                                          "webAppDisableRemoteDebuggingMonitoringEffect":  {
+                                                                                               "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_webAppDisableRemoteDebuggingMonitoringEffect')]"
+                                                                                           },
+                                          "apiAppDisableWebSocketsMonitoringEffect":  {
+                                                                                          "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_apiAppDisableWebSocketsMonitoringEffect')]"
+                                                                                      },
+                                          "functionAppDisableWebSocketsMonitoringEffect":  {
+                                                                                               "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_functionAppDisableWebSocketsMonitoringEffect')]"
+                                                                                           },
+                                          "webAppDisableWebSocketsMonitoringEffect":  {
+                                                                                          "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_webAppDisableWebSocketsMonitoringEffect')]"
+                                                                                      },
+                                          "apiAppEnforceHttpsMonitoringEffect":  {
+                                                                                     "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_apiAppEnforceHttpsMonitoringEffect')]"
+                                                                                 },
+                                          "functionAppEnforceHttpsMonitoringEffect":  {
+                                                                                          "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_functionAppEnforceHttpsMonitoringEffect')]"
+                                                                                      },
+                                          "webAppEnforceHttpsMonitoringEffect":  {
+                                                                                     "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_webAppEnforceHttpsMonitoringEffect')]"
+                                                                                 },
+                                          "apiAppEnforceHttpsMonitoringEffectV2":  {
+                                                                                       "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_apiAppEnforceHttpsMonitoringEffectV2')]"
+                                                                                   },
+                                          "functionAppEnforceHttpsMonitoringEffectV2":  {
+                                                                                            "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_functionAppEnforceHttpsMonitoringEffectV2')]"
+                                                                                        },
+                                          "webAppEnforceHttpsMonitoringEffectV2":  {
+                                                                                       "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_webAppEnforceHttpsMonitoringEffectV2')]"
+                                                                                   },
+                                          "apiAppRestrictCORSAccessMonitoringEffect":  {
+                                                                                           "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_apiAppRestrictCORSAccessMonitoringEffect')]"
+                                                                                       },
+                                          "functionAppRestrictCORSAccessMonitoringEffect":  {
+                                                                                                "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_functionAppRestrictCORSAccessMonitoringEffect')]"
+                                                                                            },
+                                          "webAppRestrictCORSAccessMonitoringEffect":  {
+                                                                                           "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_webAppRestrictCORSAccessMonitoringEffect')]"
+                                                                                       },
+                                          "apiAppUsedCustomDomainsMonitoringEffect":  {
+                                                                                          "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_apiAppUsedCustomDomainsMonitoringEffect')]"
+                                                                                      },
+                                          "functionAppUsedCustomDomainsMonitoringEffect":  {
+                                                                                               "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_functionAppUsedCustomDomainsMonitoringEffect')]"
+                                                                                           },
+                                          "webAppUsedCustomDomainsMonitoringEffect":  {
+                                                                                          "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_webAppUsedCustomDomainsMonitoringEffect')]"
+                                                                                      },
+                                          "apiAppUsedLatestDotNetMonitoringEffect":  {
+                                                                                         "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_apiAppUsedLatestDotNetMonitoringEffect')]"
+                                                                                     },
+                                          "webAppUsedLatestDotNetMonitoringEffect":  {
+                                                                                         "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_webAppUsedLatestDotNetMonitoringEffect')]"
+                                                                                     },
+                                          "apiAppUsedLatestJavaMonitoringEffect":  {
+                                                                                       "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_apiAppUsedLatestJavaMonitoringEffect')]"
+                                                                                   },
+                                          "webAppUsedLatestJavaMonitoringEffect":  {
+                                                                                       "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_webAppUsedLatestJavaMonitoringEffect')]"
+                                                                                   },
+                                          "webAppUsedLatestNodeJsMonitoringEffect":  {
+                                                                                         "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_webAppUsedLatestNodeJsMonitoringEffect')]"
+                                                                                     },
+                                          "apiAppUsedLatestPHPMonitoringEffect":  {
+                                                                                      "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_apiAppUsedLatestPHPMonitoringEffect')]"
+                                                                                  },
+                                          "webAppUsedLatestPHPMonitoringEffect":  {
+                                                                                      "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_webAppUsedLatestPHPMonitoringEffect')]"
+                                                                                  },
+                                          "apiAppUsedLatestPythonMonitoringEffect":  {
+                                                                                         "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_apiAppUsedLatestPythonMonitoringEffect')]"
+                                                                                     },
+                                          "webAppUsedLatestPythonMonitoringEffect":  {
+                                                                                         "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_webAppUsedLatestPythonMonitoringEffect')]"
+                                                                                     },
+                                          "vnetEnableDDoSProtectionMonitoringEffect":  {
+                                                                                           "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_vnetEnableDDoSProtectionMonitoringEffect')]"
+                                                                                       },
+                                          "diagnosticsLogsInIoTHubMonitoringEffect":  {
+                                                                                          "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInIoTHubMonitoringEffect')]"
+                                                                                      },
+                                          "diagnosticsLogsInIoTHubRetentionDays":  {
+                                                                                       "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInIoTHubRetentionDays')]"
+                                                                                   },
+                                          "sqlServerAdvancedDataSecurityMonitoringEffect":  {
+                                                                                                "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_sqlServerAdvancedDataSecurityMonitoringEffect')]"
+                                                                                            },
+                                          "sqlManagedInstanceAdvancedDataSecurityMonitoringEffect":  {
+                                                                                                         "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_sqlManagedInstanceAdvancedDataSecurityMonitoringEffect')]"
+                                                                                                     },
+                                          "sqlServerAdvancedDataSecurityEmailsMonitoringEffect":  {
+                                                                                                      "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_sqlServerAdvancedDataSecurityEmailsMonitoringEffect')]"
+                                                                                                  },
+                                          "sqlManagedInstanceAdvancedDataSecurityEmailsMonitoringEffect":  {
+                                                                                                               "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_sqlManagedInstanceAdvancedDataSecurityEmailsMonitoringEffect')]"
+                                                                                                           },
+                                          "sqlServerAdvancedDataSecurityEmailAdminsMonitoringEffect":  {
+                                                                                                           "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_sqlServerAdvancedDataSecurityEmailAdminsMonitoringEffect')]"
+                                                                                                       },
+                                          "sqlManagedInstanceAdvancedDataSecurityEmailAdminsMonitoringEffect":  {
+                                                                                                                    "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_sqlManagedInstanceAdvancedDataSecurityEmailAdminsMonitoringEffect')]"
+                                                                                                                },
+                                          "kubernetesServiceRbacEnabledMonitoringEffect":  {
+                                                                                               "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_kubernetesServiceRbacEnabledMonitoringEffect')]"
+                                                                                           },
+                                          "kubernetesServicePspEnabledMonitoringEffect":  {
+                                                                                              "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_kubernetesServicePspEnabledMonitoringEffect')]"
+                                                                                          },
+                                          "kubernetesServiceAuthorizedIPRangesEnabledMonitoringEffect":  {
+                                                                                                             "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_kubernetesServiceAuthorizedIPRangesEnabledMonitoringEffect')]"
+                                                                                                         },
+                                          "kubernetesServiceVersionUpToDateMonitoringEffect":  {
+                                                                                                   "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_kubernetesServiceVersionUpToDateMonitoringEffect')]"
+                                                                                               },
+                                          "vulnerabilityAssessmentOnManagedInstanceMonitoringEffect":  {
+                                                                                                           "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_vulnerabilityAssessmentOnManagedInstanceMonitoringEffect')]"
+                                                                                                       },
+                                          "vulnerabilityAssessmentOnServerMonitoringEffect":  {
+                                                                                                  "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_vulnerabilityAssessmentOnServerMonitoringEffect')]"
+                                                                                              },
+                                          "threatDetectionTypesOnManagedInstanceMonitoringEffect":  {
+                                                                                                        "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_threatDetectionTypesOnManagedInstanceMonitoringEffect')]"
+                                                                                                    },
+                                          "threatDetectionTypesOnServerMonitoringEffect":  {
+                                                                                               "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_threatDetectionTypesOnServerMonitoringEffect')]"
+                                                                                           },
+                                          "adaptiveNetworkHardeningsMonitoringEffect":  {
+                                                                                            "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_adaptiveNetworkHardeningsMonitoringEffect')]"
+                                                                                        },
+                                          "restrictAccessToManagementPortsMonitoringEffect":  {
+                                                                                                  "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_restrictAccessToManagementPortsMonitoringEffect')]"
+                                                                                              },
+                                          "restrictAccessToAppServicesMonitoringEffect":  {
+                                                                                              "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_restrictAccessToAppServicesMonitoringEffect')]"
+                                                                                          },
+                                          "disableIPForwardingMonitoringEffect":  {
+                                                                                      "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_disableIPForwardingMonitoringEffect')]"
+                                                                                  },
+                                          "ensureServerTDEIsEncryptedWithYourOwnKeyMonitoringEffect":  {
+                                                                                                           "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_ensureServerTDEIsEncryptedWithYourOwnKeyMonitoringEffect')]"
+                                                                                                       },
+                                          "ensureManagedInstanceTDEIsEncryptedWithYourOwnKeyMonitoringEffect":  {
+                                                                                                                    "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_ensureManagedInstanceTDEIsEncryptedWithYourOwnKeyMonitoringEffect')]"
+                                                                                                                },
+                                          "containerBenchmarkMonitoringEffect":  {
+                                                                                     "value":  "[parameters('EnableMonitoringinAzureSecurityCenter_containerBenchmarkMonitoringEffect')]"
+                                                                                 }
+                                      }
+                   }
+}

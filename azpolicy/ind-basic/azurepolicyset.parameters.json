@@ -1,0 +1,384 @@
+{
+    "requirespecifiedtagonresourcegroups_TAGNAME_1":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "requirespecifiedtagonresourcegroups_Tag Name"
+        },
+        "allowedValues":  [],
+    "defaultValue": "Customer"
+    },
+    "requirespecifiedtagonresourcegroups_TAGNAME_2":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "requirespecifiedtagonresourcegroups_Tag Name"
+        },
+        "allowedValues":  [],
+    "defaultValue": "Environment"
+    },
+    "requirespecifiedtagonresourcegroups_TAGNAME_3":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "requirespecifiedtagonresourcegroups_Tag Name"
+        },
+        "allowedValues":  [],
+    "defaultValue": "Application"
+    },
+    "requirespecifiedtagonresourcegroups_TAGNAME_4":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "requirespecifiedtagonresourcegroups_Tag Name"
+        },
+        "allowedValues":  [],
+        "defaultValue": "Owner"
+    },
+    "requirespecifiedtagonresourcegroups_TAGNAME_5":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "requirespecifiedtagonresourcegroups_Tag Name"
+        },
+        "allowedValues":  [],
+        "defaultValue": "CreationDate"
+    },
+    "classicresources_effect":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "classicresources_Effect",
+            "description":  "configure the policy effect."
+        },
+        "allowedValues":  [
+            "Append",
+            "AuditIfNotExists",
+            "Audit",
+            "Deny",
+            "DeployIfNotExists",
+            "Disabled"
+        ],
+        "defaultValue": "Deny"
+    },
+    "requirespecifiedtagonresourcegroups_effect_1":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "requirespecifiedtagonresourcegroups_Effect",
+            "description":  "configure the policy effect."
+        },
+        "allowedValues":  [
+            "Append",
+            "AuditIfNotExists",
+            "Audit",
+            "Deny",
+            "DeployIfNotExists",
+            "Disabled"
+        ],
+        "defaultValue": "Audit"
+    },
+    "requirespecifiedtagonresourcegroups_effect_2":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "requirespecifiedtagonresourcegroups_Effect",
+            "description":  "configure the policy effect."
+        },
+        "allowedValues":  [
+            "Append",
+            "AuditIfNotExists",
+            "Audit",
+            "Deny",
+            "DeployIfNotExists",
+            "Disabled"
+        ],
+        "defaultValue": "Deny"
+    },
+    "requirespecifiedtagonresourcegroups_effect_3":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "requirespecifiedtagonresourcegroups_Effect",
+            "description":  "configure the policy effect."
+        },
+        "allowedValues":  [
+            "Append",
+            "AuditIfNotExists",
+            "Audit",
+            "Deny",
+            "DeployIfNotExists",
+            "Disabled"
+        ],
+        "defaultValue": "Deny"
+    },
+    "requirespecifiedtagonresourcegroups_effect_4":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "requirespecifiedtagonresourcegroups_Effect",
+            "description":  "configure the policy effect."
+        },
+        "allowedValues":  [
+            "Append",
+            "AuditIfNotExists",
+            "Audit",
+            "Deny",
+            "DeployIfNotExists",
+            "Disabled"
+        ],
+        "defaultValue": "Deny"
+    },
+    "requirespecifiedtagonresourcegroups_effect_5":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "requirespecifiedtagonresourcegroups_Effect",
+            "description":  "configure the policy effect."
+        },
+        "allowedValues":  [
+            "Append",
+            "AuditIfNotExists",
+            "Audit",
+            "Deny",
+            "DeployIfNotExists",
+            "Disabled"
+        ],
+        "defaultValue": "Deny"
+    },
+    "appendspecifiedtagfromresourcegroup_TAGNAME_1":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "appendspecifiedtagfromresourcegroup_Tag Name"
+        },
+        "allowedValues":  [],
+        "defaultValue": "Customer"
+    },
+    "appendspecifiedtagfromresourcegroup_TAGNAME_2":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "appendspecifiedtagfromresourcegroup_Tag Name"
+        },
+        "allowedValues":  [],
+        "defaultValue": "Environment"
+    },
+    "appendspecifiedtagfromresourcegroup_TAGNAME_3":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "appendspecifiedtagfromresourcegroup_Tag Name"
+        },
+        "allowedValues":  [],
+        "defaultValue": "Application"
+    },
+    "appendspecifiedtagfromresourcegroup_TAGNAME_4":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "appendspecifiedtagfromresourcegroup_Tag Name"
+        },
+        "allowedValues":  [],
+        "defaultValue": "Owner"
+    },
+    "appendspecifiedtagfromresourcegroup_TAGNAME_5":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "appendspecifiedtagfromresourcegroup_Tag Name"
+        },
+        "allowedValues":  [],
+        "defaultValue": "CreationDate"
+    },
+    "appendspecifiedtagfromresourcegroup_effect_1":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "appendspecifiedtagfromresourcegroup_Effect",
+            "description":  "configure the policy effect."
+        },
+        "allowedValues":  [
+            "Append",
+            "AuditIfNotExists",
+            "Disabled"
+        ],
+        "defaultValue": "Append"
+    },
+    "appendspecifiedtagfromresourcegroup_effect_2":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "appendspecifiedtagfromresourcegroup_Effect",
+            "description":  "configure the policy effect."
+        },
+        "allowedValues":  [
+            "Append",
+            "AuditIfNotExists",
+            "Disabled"
+        ],
+        "defaultValue": "Append"
+    },
+    "appendspecifiedtagfromresourcegroup_effect_3":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "appendspecifiedtagfromresourcegroup_Effect",
+            "description":  "configure the policy effect."
+        },
+        "allowedValues":  [
+            "Append",
+            "AuditIfNotExists",
+            "Disabled"
+        ],
+        "defaultValue": "Append"
+    },
+    "appendspecifiedtagfromresourcegroup_effect_4":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "appendspecifiedtagfromresourcegroup_Effect",
+            "description":  "configure the policy effect."
+        },
+        "allowedValues":  [
+            "Append",
+            "AuditIfNotExists",
+            "Disabled"
+        ],
+        "defaultValue": "Append"
+    },
+    "appendspecifiedtagfromresourcegroup_effect_5":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "appendspecifiedtagfromresourcegroup_Effect",
+            "description":  "configure the policy effect."
+        },
+        "allowedValues":  [
+            "Append",
+            "AuditIfNotExists",
+            "Disabled"
+        ],
+        "defaultValue": "Append"
+    },
+    "resourcelocations_LISTOFALLOWEDLOCATIONS_1":  {
+        "type":  "Array",
+        "metadata":  {
+            "displayName":  "resourcelocations_Allowed locations",
+            "strongType":  "location"
+        },
+        "allowedValues":  [],
+    "defaultValue": [
+        "northeurope",
+        "westeurope"
+    ]
+    },
+    "resourcegrouplocations_LISTOFALLOWEDLOCATIONS_1":  {
+        "type":  "Array",
+        "metadata":  {
+            "displayName":  "resourcegrouplocations_Allowed locations",
+            "strongType":  "location"
+        },
+        "allowedValues":  [],
+    "defaultValue":  [
+        "northeurope",
+        "westeurope"
+    ]
+    },
+    "resourcelocations_effect":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "resourcelocations_Effect",
+            "description":  "configure the policy effect."
+        },
+        "allowedValues":  [
+            "Append",
+            "AuditIfNotExists",
+            "Audit",
+            "Deny",
+            "DeployIfNotExists",
+            "Disabled"
+        ],
+        "defaultValue": "Deny"
+    },
+    "resourcegrouplocations_effect":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "resourcegrouplocations_Effect",
+            "description":  "configure the policy effect."
+        },
+        "allowedValues":  [
+            "Append",
+            "AuditIfNotExists",
+            "Audit",
+            "Deny",
+            "DeployIfNotExists",
+            "Disabled"
+        ],
+        "defaultValue": "Deny"
+    },
+    "allowedvirtualmachineskus":  {
+        "type":  "Array",
+        "metadata":  {
+            "displayName":  "Allowed VM SKUs",
+            "strongType":  "VMSKUs"
+        },
+        "allowedValues":  [],
+        "defaultValue": [
+            "Standard_B1ms",
+            "Standard_B2s",
+            "Standard_B2ms",
+            "Standard_D2s_v3",
+            "Standard_D4s_v3",
+            "Standard_E2s_v3"
+        ]
+    },
+    "allowedvirtualmachines_effect":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "allowedvirtualmachineskus_Effect",
+            "description":  "configure the policy effect."
+        },
+        "allowedValues":  [
+            "Append",
+            "AuditIfNotExists",
+            "Audit",
+            "Deny",
+            "DeployIfNotExists",
+            "Disabled"
+        ],
+        "defaultValue": "Deny"
+    },
+    "allowedstorageaccountskus":  {
+        "type":  "Array",
+        "metadata":  {
+            "displayName":  "Allowed Storage Account SKUs"
+        },
+        "allowedValues":  [
+            "Standard_LRS",
+            "Standard_GRS",
+            "Standard_RAGRS",
+            "Standard_ZRS",
+            "Standard_GZRS",
+            "Standard_RAGZRS",
+            "Premium_LRS",
+            "Premium_ZRS"
+        ],
+        "defaultValue": [
+            "Standard_LRS",
+            "Standard_GRS",
+            "Standard_RAGRS",
+            "Standard_ZRS",
+            "Standard_GZRS",
+            "Standard_RAGZRS"
+        ]
+    },
+    "allowedstorageaccountskus_effect":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "allowedstorageaccountskus_effect",
+            "description":  "configure the policy effect."
+        },
+        "allowedValues":  [
+            "Append",
+            "AuditIfNotExists",
+            "Audit",
+            "Deny",
+            "DeployIfNotExists",
+            "Disabled"
+        ],
+        "defaultValue": "Deny"
+    },
+    "networkinterfacesshouldnothavepublicipaddresses_effect":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "networkinterfacesshouldnothavepublicipaddresses_effect",
+            "description":  "configure the policy effect."
+        },
+        "allowedValues":  [
+            "Audit",
+            "Deny",
+            "Disabled"
+        ],
+        "defaultValue": "Deny"
+    }
+}

@@ -1,0 +1,174 @@
+[
+    {
+        "policyDefinitionId":  "/providers/Microsoft.Management/managementgroups/<managementGroupName>/providers/Microsoft.Authorization/policyDefinitions/c5d1d01f-aab3-4fcf-8b53-0b6d30014c02",
+        "parameters":  {
+                           "effect":  {
+                                          "value":  "[parameters('classicresources_effect')]"
+                                      }
+                       }
+    },
+    {
+        "policyDefinitionId":  "/providers/Microsoft.Management/managementgroups/<managementGroupName>/providers/Microsoft.Authorization/policyDefinitions/6ec23398-81a2-4022-8ad5-588f786a355a",
+        "parameters":  {
+                           "tagName":  {
+                                           "value":  "[parameters('requirespecifiedtagonresourcegroups_TAGNAME_1')]"
+                                       },
+                           "effect":  {
+                                          "value":  "[parameters('requirespecifiedtagonresourcegroups_effect_1')]"
+                                      }
+                       }
+    },
+    {
+        "policyDefinitionId":  "/providers/Microsoft.Management/managementgroups/<managementGroupName>/providers/Microsoft.Authorization/policyDefinitions/6ec23398-81a2-4022-8ad5-588f786a355a",
+        "parameters":  {
+                           "tagName":  {
+                                           "value":  "[parameters('requirespecifiedtagonresourcegroups_TAGNAME_2')]"
+                                       },
+                           "effect":  {
+                                          "value":  "[parameters('requirespecifiedtagonresourcegroups_effect_2')]"
+                                      }
+                       }
+    },
+    {
+        "policyDefinitionId":  "/providers/Microsoft.Management/managementgroups/<managementGroupName>/providers/Microsoft.Authorization/policyDefinitions/6ec23398-81a2-4022-8ad5-588f786a355a",
+        "parameters":  {
+                           "tagName":  {
+                                           "value":  "[parameters('requirespecifiedtagonresourcegroups_TAGNAME_3')]"
+                                       },
+                           "effect":  {
+                                          "value":  "[parameters('requirespecifiedtagonresourcegroups_effect_3')]"
+                                      }
+                       }
+    },
+    {
+        "policyDefinitionId":  "/providers/Microsoft.Management/managementgroups/<managementGroupName>/providers/Microsoft.Authorization/policyDefinitions/6ec23398-81a2-4022-8ad5-588f786a355a",
+        "parameters":  {
+                           "tagName":  {
+                                           "value":  "[parameters('requirespecifiedtagonresourcegroups_TAGNAME_4')]"
+                                       },
+                           "effect":  {
+                                          "value":  "[parameters('requirespecifiedtagonresourcegroups_effect_4')]"
+                                      }
+                       }
+    },
+    {
+        "policyDefinitionId":  "/providers/Microsoft.Management/managementgroups/<managementGroupName>/providers/Microsoft.Authorization/policyDefinitions/6ec23398-81a2-4022-8ad5-588f786a355a",
+        "parameters":  {
+                           "tagName":  {
+                                           "value":  "[parameters('requirespecifiedtagonresourcegroups_TAGNAME_5')]"
+                                       },
+                           "effect":  {
+                                          "value":  "[parameters('requirespecifiedtagonresourcegroups_effect_5')]"
+                                      }
+                       }
+    },
+    {
+        "policyDefinitionId":  "/providers/Microsoft.Management/managementgroups/<managementGroupName>/providers/Microsoft.Authorization/policyDefinitions/51b7a917-3909-4e1f-961d-674e06349810",
+        "parameters":  {
+                           "tagName":  {
+                                           "value":  "[parameters('appendspecifiedtagfromresourcegroup_TAGNAME_1')]"
+                                       },
+                           "effect":  {
+                                          "value":  "[parameters('appendspecifiedtagfromresourcegroup_effect_1')]"
+                                      }
+                       }
+    },
+    {
+        "policyDefinitionId":  "/providers/Microsoft.Management/managementgroups/<managementGroupName>/providers/Microsoft.Authorization/policyDefinitions/51b7a917-3909-4e1f-961d-674e06349810",
+        "parameters":  {
+                           "tagName":  {
+                                           "value":  "[parameters('appendspecifiedtagfromresourcegroup_TAGNAME_2')]"
+                                       },
+                           "effect":  {
+                                          "value":  "[parameters('appendspecifiedtagfromresourcegroup_effect_2')]"
+                                      }
+                       }
+    },
+    {
+        "policyDefinitionId":  "/providers/Microsoft.Management/managementgroups/<managementGroupName>/providers/Microsoft.Authorization/policyDefinitions/51b7a917-3909-4e1f-961d-674e06349810",
+        "parameters":  {
+                           "tagName":  {
+                                           "value":  "[parameters('appendspecifiedtagfromresourcegroup_TAGNAME_3')]"
+                                       },
+                           "effect":  {
+                                          "value":  "[parameters('appendspecifiedtagfromresourcegroup_effect_3')]"
+                                      }
+                       }
+    },
+    {
+        "policyDefinitionId":  "/providers/Microsoft.Management/managementgroups/<managementGroupName>/providers/Microsoft.Authorization/policyDefinitions/51b7a917-3909-4e1f-961d-674e06349810",
+        "parameters":  {
+                           "tagName":  {
+                                           "value":  "[parameters('appendspecifiedtagfromresourcegroup_TAGNAME_4')]"
+                                       },
+                           "effect":  {
+                                          "value":  "[parameters('appendspecifiedtagfromresourcegroup_effect_4')]"
+                                      }
+                       }
+    },
+    {
+        "policyDefinitionId":  "/providers/Microsoft.Management/managementgroups/<managementGroupName>/providers/Microsoft.Authorization/policyDefinitions/51b7a917-3909-4e1f-961d-674e06349810",
+        "parameters":  {
+                           "tagName":  {
+                                           "value":  "[parameters('appendspecifiedtagfromresourcegroup_TAGNAME_5')]"
+                                       },
+                           "effect":  {
+                                          "value":  "[parameters('appendspecifiedtagfromresourcegroup_effect_5')]"
+                                      }
+                       }
+    },
+    {
+        "policyDefinitionId":  "/providers/Microsoft.Management/managementgroups/<managementGroupName>/providers/Microsoft.Authorization/policyDefinitions/de9e1b02-55e6-4b28-833a-e642865b6ec9",
+        "parameters":  {
+                           "listOfAllowedLocations":  {
+                                                          "value":  "[parameters('resourcelocations_LISTOFALLOWEDLOCATIONS_1')]"
+                                                      },
+                           "effect":  {
+                                          "value":  "[parameters('resourcelocations_effect')]"
+                                      }
+                       }
+    },
+    {
+        "policyDefinitionId":  "/providers/Microsoft.Management/managementgroups/<managementGroupName>/providers/Microsoft.Authorization/policyDefinitions/2a217706-5bdd-43a0-9be7-adff2be24685",
+        "parameters":  {
+                           "listOfAllowedLocations":  {
+                                                          "value":  "[parameters('resourcegrouplocations_LISTOFALLOWEDLOCATIONS_1')]"
+                                                      },
+                           "effect":  {
+                                          "value":  "[parameters('resourcegrouplocations_effect')]"
+                                      }
+                       }
+    },
+    {
+        "policyDefinitionId":  "/providers/Microsoft.Management/managementgroups/<managementGroupName>/providers/Microsoft.Authorization/policyDefinitions/672ba244-c82e-4477-969d-5c79def0bef7",
+        "parameters":  {
+                           "allowedvirtualmachineskus":  {
+                                           "value":  "[parameters('allowedvirtualmachineskus')]"
+                                       },
+                           "effect":  {
+                                          "value":  "[parameters('allowedvirtualmachines_effect')]"
+                                      }
+                       }
+    },
+    {
+        "policyDefinitionId":  "/providers/Microsoft.Management/managementgroups/<managementGroupName>/providers/Microsoft.Authorization/policyDefinitions/8827453c-d127-4079-a4c2-7a9baf636b76",
+        "parameters":  {
+                           
+            "allowedstorageaccountskus":  {
+                "value":  "[parameters('allowedstorageaccountskus')]"
+            },                        
+            "effect":  {
+                "value":  "[parameters('allowedstorageaccountskus_effect')]"
+            }
+        }
+    },
+    {
+        "policyDefinitionId":  "/providers/Microsoft.Management/managementgroups/<managementGroupName>/providers/Microsoft.Authorization/policyDefinitions/581507e3-bd29-4695-a625-98820790c709",
+        "parameters":  {
+                                       
+            "effect":  {
+                "value":  "[parameters('networkinterfacesshouldnothavepublicipaddresses_effect')]"
+            }
+        }
+    }    
+]

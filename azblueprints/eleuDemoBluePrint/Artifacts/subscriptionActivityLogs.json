@@ -1,0 +1,49 @@
+{
+    "kind": "template",
+    "properties": {
+      "displayName": "Azure Activity Logs",
+      "description": "",
+      "dependsOn": [],
+      "template": {
+        "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+        "contentVersion": "1.0.0.0",
+        "parameters": {
+            "location": {
+                "type": "string",
+                "defaultValue": "West Europe"
+            },
+            "workspaceName": {
+                "type": "string"
+            },
+            "subscriptionId": {
+                "type":"string"
+            }
+        },
+        "variables": {
+        },
+        "resources": [
+            {
+                "type": "Microsoft.OperationalInsights/workspaces/datasources",
+                "kind": "AzureActivityLog",
+                "name": "[concat(parameters('workspaceName'),'/',parameters('subscriptionId'))]",
+                "apiVersion": "2015-11-01-preview",
+                "location": "[parameters('location')]",
+                "properties": {
+                  "linkedResourceId": "[concat('/subscriptions/',parameters('subscriptionId'), '/providers/microsoft.insights/eventTypes/management')]"
+                }
+              }
+        ],
+        "outputs": {
+        }
+      },
+      "resourceGroup": "ResourceGroup",
+      "parameters": {
+        "workspaceName": {
+          "value": "[parameters('activitylogs_workspaceName')]"
+        },
+        "subscriptionId": {
+          "value": "[parameters('activitylogs_subscriptionId')]"
+        }
+      }
+    }
+  }

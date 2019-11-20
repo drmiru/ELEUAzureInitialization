@@ -1,0 +1,201 @@
+{
+  "kind": "template",
+  "properties": {
+    "displayName": "Log Analytics Workspace",
+    "description": "",
+    "dependsOn": [
+      "automationAccount"
+    ],
+    "template": {
+      "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "location": {
+          "type": "string",
+          "defaultValue": "West Europe"
+        },
+        "logAnalyticsWorkspaceName": {
+          "type": "string"
+        },
+        "sku": {
+          "type": "string",
+          "allowedValues": [
+            "PerGB2018"
+          ],
+          "defaultValue": "PerGB2018"
+        },
+        "dataRetentionInDays": {
+          "type": "int",
+          "minValue": 7,
+          "maxValue": 730,
+          "defaultValue": 90
+        },
+        "automationAccountName": {
+          "type": "string"
+        }
+      },
+      "variables": {},
+      "resources": [
+        {
+          "type": "Microsoft.OperationalInsights/workspaces",
+          "apiVersion": "2015-11-01-preview",
+          "name": "[parameters('logAnalyticsWorkspaceName')]",
+          "location": "[parameters('location')]",
+          "properties": {
+            "sku": {
+              "name": "[parameters('sku')]"
+            },
+            "retentionInDays": "[parameters('dataRetentionInDays')]"
+          },
+          "resources": [
+            {
+              "type": "Microsoft.OperationalInsights/workspaces/linkedServices",
+              "apiVersion": "2015-11-01-preview",
+              "name": "[concat(parameters('logAnalyticsWorkspaceName'), '/' , 'Automation')]",
+              "properties": {
+                "resourceId": "[resourceId('Microsoft.Automation/automationAccounts/', parameters('automationAccountName'))]"
+              },
+              "dependsOn": [
+                "[concat('Microsoft.OperationalInsights/workspaces/', parameters('logAnalyticsWorkspaceName'))]"
+              ]
+            },
+            {
+              "type": "datasources",
+              "apiVersion": "2015-11-01-preview",
+              "name": "windowsEventLog1",
+              "dependsOn": [
+                "[concat('Microsoft.OperationalInsights/workspaces/', parameters('logAnalyticsWorkspaceName'))]"
+              ],
+              "kind": "WindowsEvent",
+              "properties": {
+                "eventLogName": "Application",
+                "eventTypes": [
+                  {
+                    "eventType": "Error"
+                  },
+                  {
+                    "eventType": "Warning"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "datasources",
+              "apiVersion": "2015-11-01-preview",
+              "name": "windowsEventLog2",
+              "dependsOn": [
+                "[concat('Microsoft.OperationalInsights/workspaces/', parameters('logAnalyticsWorkspaceName'))]"
+              ],
+              "kind": "WindowsEvent",
+              "properties": {
+                "eventLogName": "System",
+                "eventTypes": [
+                  {
+                    "eventType": "Error"
+                  },
+                  {
+                    "eventType": "Warning"
+                  }
+                ]
+              }
+            },
+            {
+              "type": "datasources",
+              "apiVersion": "2015-11-01-preview",
+              "name": "windowsPerfCounter1",
+              "dependsOn": [
+                "[concat('Microsoft.OperationalInsights/workspaces/', parameters('logAnalyticsWorkspaceName'))]"
+              ],
+              "kind": "WindowsPerformanceCounter",
+              "properties": {
+                "objectName": "Memory",
+                "instanceName": "*",
+                "intervalSeconds": 120,
+                "counterName": "Available MBytes"
+              }
+            },
+            {
+              "type": "datasources",
+              "apiVersion": "2015-11-01-preview",
+              "name": "windowsPerfCounter2",
+              "dependsOn": [
+                "[concat('Microsoft.OperationalInsights/workspaces/', parameters('logAnalyticsWorkspaceName'))]"
+              ],
+              "kind": "WindowsPerformanceCounter",
+              "properties": {
+                "objectName": "Processor",
+                "instanceName": "*",
+                "intervalSeconds": 120,
+                "counterName": "% Processor Time"
+              }
+            },
+            {
+              "type": "datasources",
+              "apiVersion": "2015-11-01-preview",
+              "name": "windowsPerfCounter3",
+              "dependsOn": [
+                "[concat('Microsoft.OperationalInsights/workspaces/', parameters('logAnalyticsWorkspaceName'))]"
+              ],
+              "kind": "WindowsPerformanceCounter",
+              "properties": {
+                "objectName": "LogicalDisk",
+                "instanceName": "*",
+                "intervalSeconds": 120,
+                "counterName": "% Free Space"
+              }
+            },
+            {
+              "type": "datasources",
+              "apiVersion": "2015-11-01-preview",
+              "name": "windowsPerfCounter4",
+              "dependsOn": [
+                "[concat('Microsoft.OperationalInsights/workspaces/', parameters('logAnalyticsWorkspaceName'))]"
+              ],
+              "kind": "WindowsPerformanceCounter",
+              "properties": {
+                "objectName": "LogicalDisk",
+                "instanceName": "*",
+                "intervalSeconds": 120,
+                "counterName": "Free Megabytes"
+              }
+            },
+            {
+              "type": "datasources",
+              "apiVersion": "2015-11-01-preview",
+              "name": "windowsPerfCounter5",
+              "dependsOn": [
+                "[concat('Microsoft.OperationalInsights/workspaces/', parameters('logAnalyticsWorkspaceName'))]"
+              ],
+              "kind": "WindowsPerformanceCounter",
+              "properties": {
+                "objectName": "System",
+                "instanceName": "*",
+                "intervalSeconds": 600,
+                "counterName": "System Up Time"
+              }
+            }
+          ]
+        }
+      ],
+      "outputs": {}
+    },
+    "resourceGroup": "ResourceGroup",
+    "parameters": {
+      "location": {
+        "value": "[parameters('logAnalyticsWorkspace_location')]"
+      },
+      "logAnalyticsWorkspaceName": {
+        "value": "[parameters('logAnalyticsWorkspace_logAnalyticsWorkspaceName')]"
+      },
+      "sku": {
+        "value": "[parameters('logAnalyticsWorkspace_sku')]"
+      },
+      "dataRetentionInDays": {
+        "value": "[parameters('logAnalyticsWorkspace_dataRetentionInDays')]"
+      },
+      "automationAccountName": {
+        "value": "[parameters('logAnalyticsWorkspace_automationAccountName')]"
+      }
+    }
+  }
+}

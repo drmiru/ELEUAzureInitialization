@@ -1,0 +1,61 @@
+{
+  "kind": "template",
+  "properties": {
+    "displayName": "Storage Account for Diagnostic Logs",
+    "description": "",
+    "dependsOn": [],
+    "template": {
+      "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "storageAccountName": {
+          "type": "string",
+          "metadata": {
+            "description": "Specifies the name of the Azure Storage account."
+          }
+        },
+        "accountType": {
+          "type": "string",
+          "allowedValues": [
+            "Standard_GRS",
+            "Standard_LRS",
+            "Standard_ZRS",
+            "Standard_RAGRS",
+            "Premium_LRS"
+          ],
+          "metadata": {
+            "description": "Storage Account Redundancy / Replication"
+          }
+        }
+      },
+      "variables": {
+        "location": "[resourceGroup().location]"
+      },
+      "resources": [
+        {
+          "name": "[parameters('storageAccountName')]",
+          "type": "Microsoft.Storage/storageAccounts",
+          "apiVersion": "2018-11-01",
+          "location": "[variables('location')]",
+          "kind": "StorageV2",
+          "sku": {
+            "name": "[parameters('accountType')]",
+            "tier": "Standard"
+          },
+          "properties": {
+            "accessTier": "Hot"
+          }
+        }
+      ]
+    },
+    "resourceGroup": "ResourceGroup",
+    "parameters": {
+      "storageAccountName": {
+        "value": "[parameters('storageAccountforDiagnosticLogs_storageAccountName')]"
+      },
+      "accountType": {
+        "value": "[parameters('storageAccountforDiagnosticLogs_accountType')]"
+      }
+    }
+  }
+}

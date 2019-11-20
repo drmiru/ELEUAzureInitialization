@@ -1,0 +1,1932 @@
+{
+  "properties": {
+    "targetScope": "subscription",
+    "parameters": {
+      "EnableMonitoringinAzureSecurityCenter_vmssSystemUpdatesMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "System updates on virtual machine scale sets should be installed (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_vmssEndpointProtectionMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Endpoint protection solution should be installed on virtual machine scale sets (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_vmssOsVulnerabilitiesMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Vulnerabilities in security configuration on your virtual machine scale sets should be remediated (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_systemUpdatesMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "System updates should be installed on your machines (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_systemConfigurationsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Vulnerabilities in security configuration on your machines should be remediated (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_endpointProtectionMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor missing Endpoint Protection in Azure Security Center (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diskEncryptionMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Disk encryption should be applied on virtual machines (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_networkSecurityGroupsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor network security groups (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_networkSecurityGroupsOnSubnetsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Network Security Groups on the subnet level should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_networkSecurityGroupsOnVirtualMachinesMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Network Security Groups for virtual machines should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_webApplicationFirewallMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "The NSGs rules for web applications on IaaS should be hardened (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_nextGenerationFirewallMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Access through Internet facing endpoint should be restricted (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_vulnerabilityAssesmentMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Vulnerabilities should be remediated by a Vulnerability Assessment solution (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_serverVulnerabilityAssessmentEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Vulnerability Assessment should be enabled on Virtual Machines (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_storageEncryptionMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Audit missing blob encryption for storage accounts (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_jitNetworkAccessMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Just-In-Time network access control should be applied on virtual machines (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_adaptiveApplicationControlsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Adaptive Application Controls should be enabled on virtual machines (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_sqlAuditingMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "[Deprecated] Monitor unaudited SQL servers in Azure Security Center (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_sqlEncryptionMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "[Deprecated] Monitor unencrypted SQL databases in Azure Security Center (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_sqlDbEncryptionMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Transparent Data Encryption on SQL databases should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_sqlServerAuditingMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Auditing should be enabled on advanced data security settings on SQL Server (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_sqlServerAuditingActionsAndGroupsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "SQL Auditing settings should have Action-Groups configured to capture critical activities (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_SqlServerAuditingRetentionDaysMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "SQL servers should be configured with auditing retention days greater than 90 days (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInAppServiceMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor diagnostic logs in Azure App Services (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInSelectiveAppServicesMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Diagnostic logs in App Services should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_encryptionOfAutomationAccountMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Automation account variables should be encrypted (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInBatchAccountMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Diagnostic logs in Batch accounts should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInBatchAccountRetentionDays": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Required retention (in days) for logs in Batch accounts (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "365",
+        "allowedValues": []
+      },
+      "EnableMonitoringinAzureSecurityCenter_metricAlertsInBatchAccountMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Metric alert rules should be configured on Batch accounts (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_classicComputeVMsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Virtual machines should be migrated to new Azure Resource Manager resources (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_classicStorageAccountsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Storage accounts should be migrated to new Azure Resource Manager resources (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInDataLakeAnalyticsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Diagnostic logs in Data Lake Analytics should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInDataLakeAnalyticsRetentionDays": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Required retention (in days) of logs in Data Lake Analytics accounts (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "365",
+        "allowedValues": []
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInDataLakeStoreMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Diagnostic logs in Azure Data Lake Store should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInDataLakeStoreRetentionDays": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Required retention (in days) of logs in Data Lake Store accounts (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "365",
+        "allowedValues": []
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInEventHubMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Diagnostic logs in Event Hub should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInEventHubRetentionDays": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Required retention (in days) of logs in Event Hub accounts (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "365",
+        "allowedValues": []
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInKeyVaultMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Diagnostic logs in Key Vault should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInKeyVaultRetentionDays": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Required retention (in days) of logs in Key Vault vaults (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "365",
+        "allowedValues": []
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInLogicAppsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Diagnostic logs in Logic Apps should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInLogicAppsRetentionDays": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Required retention (in days) of logs in Logic Apps workflows (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "365",
+        "allowedValues": []
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInRedisCacheMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Only secure connections to your Redis Cache should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInSearchServiceMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Diagnostic logs in Search services should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInSearchServiceRetentionDays": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Required retention (in days) of logs in Azure Search service (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "365",
+        "allowedValues": []
+      },
+      "EnableMonitoringinAzureSecurityCenter_aadAuthenticationInServiceFabricMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Service Fabric clusters should only use Azure Active Directory for client authentication (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_clusterProtectionLevelInServiceFabricMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Service Fabric clusters should have the ClusterProtectionLevel property set to EncryptAndSign (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInServiceBusMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Diagnostic logs in Service Bus should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInServiceBusRetentionDays": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Required retention (in days) of logs in Service Bus (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "365",
+        "allowedValues": []
+      },
+      "EnableMonitoringinAzureSecurityCenter_namespaceAuthorizationRulesInServiceBusMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "All authorization rules except RootManageSharedAccessKey should be removed from Service Bus namespace (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_aadAuthenticationInSqlServerMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "An Azure Active Directory administrator should be provisioned for SQL servers (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_secureTransferToStorageAccountMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Secure transfer to storage accounts should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInStreamAnalyticsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Diagnostic logs in Azure Stream Analytics should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInStreamAnalyticsRetentionDays": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Required retention (in days) of logs in Stream Analytics (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "365",
+        "allowedValues": []
+      },
+      "EnableMonitoringinAzureSecurityCenter_useRbacRulesMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Audit usage of custom RBAC rules (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_disableUnrestrictedNetworkToStorageAccountMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Audit unrestricted network access to storage accounts (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInServiceFabricMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Diagnostic logs in Virtual Machine Scale Sets should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_accessRulesInEventHubNamespaceMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "All authorization rules except RootManageSharedAccessKey should be removed from Event Hub namespace (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_accessRulesInEventHubMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Authorization rules on the Event Hub instance should be defined (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_sqlDbVulnerabilityAssesmentMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Vulnerabilities on your SQL databases should be remediated (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_sqlDbDataClassificationMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Sensitive data in your SQL databases should be classified (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_identityDesignateLessThanOwnersMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "A maximum of 3 owners should be designated for your subscription (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_identityDesignateMoreThanOneOwnerMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "There should be more than one owner assigned to your subscription (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_identityEnableMFAForOwnerPermissionsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "MFA should be enabled on accounts with owner permissions on your subscription (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_identityEnableMFAForWritePermissionsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "MFA should be enabled accounts with write permissions on your subscription (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_identityEnableMFAForReadPermissionsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "MFA should be enabled on accounts with read permissions on your subscription (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_identityRemoveDeprecatedAccountWithOwnerPermissionsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Deprecated accounts with owner permissions should be removed from your subscription (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_identityRemoveDeprecatedAccountMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Deprecated accounts should be removed from your subscription (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_identityRemoveExternalAccountWithOwnerPermissionsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "External accounts with owner permissions should be removed from your subscription (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_identityRemoveExternalAccountWithWritePermissionsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "External accounts with write permissions should be removed from your subscription (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_identityRemoveExternalAccountWithReadPermissionsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "External accounts with read permissions should be removed from your subscription (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_apiAppConfigureIPRestrictionsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor Configure IP restrictions for API App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_functionAppConfigureIPRestrictionsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor Configure IP restrictions for Function App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_webAppConfigureIPRestrictionsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor Configure IP restrictions for Web App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_apiAppDisableRemoteDebuggingMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Remote debugging should be turned off for API App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_functionAppDisableRemoteDebuggingMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Remote debugging should be turned off for Function App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_webAppDisableRemoteDebuggingMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Remote debugging should be turned off for Web Application (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_apiAppDisableWebSocketsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor disable web sockets for API App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_functionAppDisableWebSocketsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor disable web sockets for Function App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_webAppDisableWebSocketsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor disable web sockets for Web App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_apiAppEnforceHttpsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "API App should only be accessible over HTTPS (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_functionAppEnforceHttpsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Function App should only be accessible over HTTPS (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_webAppEnforceHttpsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Web Application should only be accessible over HTTPS (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_apiAppEnforceHttpsMonitoringEffectV2": {
+        "type": "string",
+        "metadata": {
+          "displayName": "API App should only be accessible over HTTPS V2 (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_functionAppEnforceHttpsMonitoringEffectV2": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Function App should only be accessible over HTTPS V2 (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_webAppEnforceHttpsMonitoringEffectV2": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Web Application should only be accessible over HTTPS V2 (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_apiAppRestrictCORSAccessMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "CORS should not allow every resource to access your API App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_functionAppRestrictCORSAccessMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "CORS should not allow every resource to access your Function App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_webAppRestrictCORSAccessMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "CORS should not allow every resource to access your Web Application (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_apiAppUsedCustomDomainsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor the custom domain use in API App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_functionAppUsedCustomDomainsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor the custom domain use in Function App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_webAppUsedCustomDomainsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor the custom domain use in Web App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_apiAppUsedLatestDotNetMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor use latest .Net in API App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_webAppUsedLatestDotNetMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor use latest .Net in Web App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_apiAppUsedLatestJavaMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor use latest Java in API App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_webAppUsedLatestJavaMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor use latest Java in Web App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_webAppUsedLatestNodeJsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor use latest Node.js in Web App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_apiAppUsedLatestPHPMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor use latest PHP in API App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_webAppUsedLatestPHPMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor use latest PHP in Web App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_apiAppUsedLatestPythonMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor use latest Python in API App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_webAppUsedLatestPythonMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Monitor use latest Python in Web App (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Disabled",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_vnetEnableDDoSProtectionMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "DDoS Protection Standard should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInIoTHubMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Diagnostic logs in IoT Hub should be enabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_diagnosticsLogsInIoTHubRetentionDays": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Required retention (in days) of logs in IoT Hub accounts (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "365",
+        "allowedValues": []
+      },
+      "EnableMonitoringinAzureSecurityCenter_sqlServerAdvancedDataSecurityMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Advanced data security should be enabled on your SQL servers (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_sqlManagedInstanceAdvancedDataSecurityMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Advanced data security should be enabled on your SQL managed instances (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_sqlServerAdvancedDataSecurityEmailsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Advanced data security settings for SQL server should contain an email address to receive security alerts (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_sqlManagedInstanceAdvancedDataSecurityEmailsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Advanced data security settings for SQL managed instance should contain an email address to receive security alerts (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_sqlServerAdvancedDataSecurityEmailAdminsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Email notifications to admins and subscription owners should be enabled in SQL server advanced data security settings (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_sqlManagedInstanceAdvancedDataSecurityEmailAdminsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Email notifications to admins and subscription owners should be enabled in SQL managed instance advanced data security settings (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_kubernetesServiceRbacEnabledMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Role-Based Access Control (RBAC) should be used on Kubernetes Services (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_kubernetesServicePspEnabledMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Pod Security Policies should be defined on Kubernetes Services (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_kubernetesServiceAuthorizedIPRangesEnabledMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Authorized IP ranges should be defined on Kubernetes Services (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_kubernetesServiceVersionUpToDateMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Kubernetes Services should be upgraded to a non vulnerable Kubernetes version (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_vulnerabilityAssessmentOnManagedInstanceMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Vulnerability assessment should be enabled on your SQL managed instances (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_vulnerabilityAssessmentOnServerMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Vulnerability assessment should be enabled on your SQL servers (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_threatDetectionTypesOnManagedInstanceMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Advanced Threat Protection types should be set to 'All' in SQL managed instance Advanced Data Security settings (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_threatDetectionTypesOnServerMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Advanced Threat Protection types should be set to 'All' in SQL server Advanced Data Security settings (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_adaptiveNetworkHardeningsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Network Security Group Rules for Internet facing virtual machines should be hardened (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_restrictAccessToManagementPortsMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Management ports should be closed on your virtual machines (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_restrictAccessToAppServicesMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Access to App Services should be restricted (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_disableIPForwardingMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "IP Forwarding on your virtual machine should be disabled (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_ensureServerTDEIsEncryptedWithYourOwnKeyMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "SQL server TDE protector should be encrypted with your own key (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_ensureManagedInstanceTDEIsEncryptedWithYourOwnKeyMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "SQL managed instance TDE protector should be encrypted with your own key (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "EnableMonitoringinAzureSecurityCenter_containerBenchmarkMonitoringEffect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Vulnerabilities in container security configurations should be remediated (Policy:  Enable Monitoring in Azure Security Center)"
+        },
+        "defaultValue": "AuditIfNotExists",
+        "allowedValues": [
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "SecurityCenter_workspaceName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "workspaceName (SecurityCenter)"
+        },
+        "allowedValues": []
+      },
+      "SecurityCenter_workspaceResourceGroup": {
+        "type": "string",
+        "metadata": {
+          "displayName": "workspaceResourceGroup (SecurityCenter)"
+        },
+        "allowedValues": []
+      },
+      "SecurityCenter_subscriptionId": {
+        "type": "string",
+        "metadata": {
+          "displayName": "subscriptionId (SecurityCenter)"
+        },
+        "allowedValues": []
+      },
+      "requirespecifiedtagonresourcegroups_TAGNAME_1": {
+        "type": "string",
+        "metadata": {
+          "displayName": "requirespecifiedtagonresourcegroups_Tag Name (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Customer",
+        "allowedValues": []
+      },
+      "requirespecifiedtagonresourcegroups_TAGNAME_2": {
+        "type": "string",
+        "metadata": {
+          "displayName": "requirespecifiedtagonresourcegroups_Tag Name (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Environment",
+        "allowedValues": []
+      },
+      "requirespecifiedtagonresourcegroups_TAGNAME_3": {
+        "type": "string",
+        "metadata": {
+          "displayName": "requirespecifiedtagonresourcegroups_Tag Name (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Application",
+        "allowedValues": []
+      },
+      "requirespecifiedtagonresourcegroups_TAGNAME_4": {
+        "type": "string",
+        "metadata": {
+          "displayName": "requirespecifiedtagonresourcegroups_Tag Name (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Owner",
+        "allowedValues": []
+      },
+      "requirespecifiedtagonresourcegroups_TAGNAME_5": {
+        "type": "string",
+        "metadata": {
+          "displayName": "requirespecifiedtagonresourcegroups_Tag Name (Policy: p-ind-basic)"
+        },
+        "defaultValue": "CreationDate",
+        "allowedValues": []
+      },
+      "classicresources_effect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "classicresources_Effect (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Deny",
+        "allowedValues": [
+          "Append",
+          "AuditIfNotExists",
+          "Audit",
+          "Deny",
+          "DeployIfNotExists",
+          "Disabled"
+        ]
+      },
+      "requirespecifiedtagonresourcegroups_effect_1": {
+        "type": "string",
+        "metadata": {
+          "displayName": "requirespecifiedtagonresourcegroups_Effect (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Append",
+          "AuditIfNotExists",
+          "Audit",
+          "Deny",
+          "DeployIfNotExists",
+          "Disabled"
+        ]
+      },
+      "requirespecifiedtagonresourcegroups_effect_2": {
+        "type": "string",
+        "metadata": {
+          "displayName": "requirespecifiedtagonresourcegroups_Effect (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Deny",
+        "allowedValues": [
+          "Append",
+          "AuditIfNotExists",
+          "Audit",
+          "Deny",
+          "DeployIfNotExists",
+          "Disabled"
+        ]
+      },
+      "requirespecifiedtagonresourcegroups_effect_3": {
+        "type": "string",
+        "metadata": {
+          "displayName": "requirespecifiedtagonresourcegroups_Effect (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Deny",
+        "allowedValues": [
+          "Append",
+          "AuditIfNotExists",
+          "Audit",
+          "Deny",
+          "DeployIfNotExists",
+          "Disabled"
+        ]
+      },
+      "requirespecifiedtagonresourcegroups_effect_4": {
+        "type": "string",
+        "metadata": {
+          "displayName": "requirespecifiedtagonresourcegroups_Effect (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Deny",
+        "allowedValues": [
+          "Append",
+          "AuditIfNotExists",
+          "Audit",
+          "Deny",
+          "DeployIfNotExists",
+          "Disabled"
+        ]
+      },
+      "requirespecifiedtagonresourcegroups_effect_5": {
+        "type": "string",
+        "metadata": {
+          "displayName": "requirespecifiedtagonresourcegroups_Effect (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Deny",
+        "allowedValues": [
+          "Append",
+          "AuditIfNotExists",
+          "Audit",
+          "Deny",
+          "DeployIfNotExists",
+          "Disabled"
+        ]
+      },
+      "appendspecifiedtagfromresourcegroup_TAGNAME_1": {
+        "type": "string",
+        "metadata": {
+          "displayName": "appendspecifiedtagfromresourcegroup_Tag Name (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Customer",
+        "allowedValues": []
+      },
+      "appendspecifiedtagfromresourcegroup_TAGNAME_2": {
+        "type": "string",
+        "metadata": {
+          "displayName": "appendspecifiedtagfromresourcegroup_Tag Name (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Environment",
+        "allowedValues": []
+      },
+      "appendspecifiedtagfromresourcegroup_TAGNAME_3": {
+        "type": "string",
+        "metadata": {
+          "displayName": "appendspecifiedtagfromresourcegroup_Tag Name (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Application",
+        "allowedValues": []
+      },
+      "appendspecifiedtagfromresourcegroup_TAGNAME_4": {
+        "type": "string",
+        "metadata": {
+          "displayName": "appendspecifiedtagfromresourcegroup_Tag Name (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Owner",
+        "allowedValues": []
+      },
+      "appendspecifiedtagfromresourcegroup_TAGNAME_5": {
+        "type": "string",
+        "metadata": {
+          "displayName": "appendspecifiedtagfromresourcegroup_Tag Name (Policy: p-ind-basic)"
+        },
+        "defaultValue": "CreationDate",
+        "allowedValues": []
+      },
+      "appendspecifiedtagfromresourcegroup_effect_1": {
+        "type": "string",
+        "metadata": {
+          "displayName": "appendspecifiedtagfromresourcegroup_Effect (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Append",
+        "allowedValues": [
+          "Append",
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "appendspecifiedtagfromresourcegroup_effect_2": {
+        "type": "string",
+        "metadata": {
+          "displayName": "appendspecifiedtagfromresourcegroup_Effect (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Append",
+        "allowedValues": [
+          "Append",
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "appendspecifiedtagfromresourcegroup_effect_3": {
+        "type": "string",
+        "metadata": {
+          "displayName": "appendspecifiedtagfromresourcegroup_Effect (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Append",
+        "allowedValues": [
+          "Append",
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "appendspecifiedtagfromresourcegroup_effect_4": {
+        "type": "string",
+        "metadata": {
+          "displayName": "appendspecifiedtagfromresourcegroup_Effect (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Append",
+        "allowedValues": [
+          "Append",
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "appendspecifiedtagfromresourcegroup_effect_5": {
+        "type": "string",
+        "metadata": {
+          "displayName": "appendspecifiedtagfromresourcegroup_Effect (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Append",
+        "allowedValues": [
+          "Append",
+          "AuditIfNotExists",
+          "Disabled"
+        ]
+      },
+      "resourcelocations_LISTOFALLOWEDLOCATIONS_1": {
+        "type": "array",
+        "metadata": {
+          "displayName": "resourcelocations_Allowed locations (Policy: p-ind-basic)",
+          "strongType": "location"
+        },
+        "defaultValue": [
+          "northeurope",
+          "westeurope"
+        ],
+        "allowedValues": []
+      },
+      "resourcegrouplocations_LISTOFALLOWEDLOCATIONS_1": {
+        "type": "array",
+        "metadata": {
+          "displayName": "resourcegrouplocations_Allowed locations (Policy: p-ind-basic)",
+          "strongType": "location"
+        },
+        "defaultValue": [
+          "northeurope",
+          "westeurope"
+        ],
+        "allowedValues": []
+      },
+      "resourcelocations_effect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "resourcelocations_Effect (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Deny",
+        "allowedValues": [
+          "Append",
+          "AuditIfNotExists",
+          "Audit",
+          "Deny",
+          "DeployIfNotExists",
+          "Disabled"
+        ]
+      },
+      "resourcegrouplocations_effect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "resourcegrouplocations_Effect (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Deny",
+        "allowedValues": [
+          "Append",
+          "AuditIfNotExists",
+          "Audit",
+          "Deny",
+          "DeployIfNotExists",
+          "Disabled"
+        ]
+      },
+      "allowedvirtualmachineskus": {
+        "type": "array",
+        "metadata": {
+          "displayName": "Allowed VM SKUs (Policy: p-ind-basic)",
+          "strongType": "VMSKUs"
+        },
+        "defaultValue": [
+          "Standard_B1ms",
+          "Standard_B2s",
+          "Standard_B2ms",
+          "Standard_D2s_v3",
+          "Standard_D4s_v3",
+          "Standard_E2s_v3"
+        ],
+        "allowedValues": []
+      },
+      "allowedvirtualmachines_effect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "allowedvirtualmachineskus_Effect (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Deny",
+        "allowedValues": [
+          "Append",
+          "AuditIfNotExists",
+          "Audit",
+          "Deny",
+          "DeployIfNotExists",
+          "Disabled"
+        ]
+      },
+      "allowedstorageaccountskus": {
+        "type": "array",
+        "metadata": {
+          "displayName": "Allowed Storage Account SKUs (Policy: p-ind-basic)"
+        },
+        "defaultValue": [
+          "Standard_LRS",
+          "Standard_GRS",
+          "Standard_RAGRS",
+          "Standard_ZRS",
+          "Standard_GZRS",
+          "Standard_RAGZRS"
+        ],
+        "allowedValues": [
+          "Standard_LRS",
+          "Standard_GRS",
+          "Standard_RAGRS",
+          "Standard_ZRS",
+          "Standard_GZRS",
+          "Standard_RAGZRS",
+          "Premium_LRS",
+          "Premium_ZRS"
+        ]
+      },
+      "allowedstorageaccountskus_effect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "allowedstorageaccountskus_effect (Policy: p-ind-basic)"
+        },
+        "defaultValue": "Deny",
+        "allowedValues": [
+          "Append",
+          "AuditIfNotExists",
+          "Audit",
+          "Deny",
+          "DeployIfNotExists",
+          "Disabled"
+        ]
+      },
+      "networkinterfacesshouldnothavepublicipaddresses_effect":  {
+        "type":  "String",
+        "metadata":  {
+            "displayName":  "networkinterfacesshouldnothavepublicipaddresses_effect",
+            "description":  "configure the policy effect."
+        },
+        "allowedValues":  [
+            "Audit",
+            "Deny",
+            "Disabled"
+        ],
+        "defaultValue": "Deny"
+      },
+      "automationAccount_accountName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "accountName (Automation Account)"
+        },
+        "allowedValues": []
+      },
+      "automationAccount_accountType": {
+        "type": "string",
+        "metadata": {
+          "displayName": "accountType (Automation Account)"
+        },
+        "allowedValues": [
+          "Free",
+          "Basic"
+        ]
+      },
+      "keyVault_vaultName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "vaultName (Key Vault)"
+        },
+        "allowedValues": []
+      },
+      "keyVault_sku": {
+        "type": "string",
+        "metadata": {
+          "displayName": "sku (Key Vault)",
+          "description": "SKU for the vault"
+        },
+        "defaultValue": "Standard",
+        "allowedValues": [
+          "Standard",
+          "Premium"
+        ]
+      },
+      "keyVault_tenantId": {
+        "type": "string",
+        "metadata": {
+          "displayName": "tenantId (Key Vault)"
+        },
+        "allowedValues": []
+      },
+      "keyVault_userId": {
+        "type": "string",
+        "metadata": {
+          "displayName": "userId (Key Vault)"
+        },
+        "allowedValues": []
+      },
+      "logAnalyticsWorkspace_location": {
+        "type": "string",
+        "metadata": {
+          "displayName": "location (Log Analytics Workspace)"
+        },
+        "defaultValue": "West Europe",
+        "allowedValues": []
+      },
+      "logAnalyticsWorkspace_logAnalyticsWorkspaceName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "logAnalyticsWorkspaceName (Log Analytics Workspace)"
+        },
+        "allowedValues": []
+      },
+      "logAnalyticsWorkspace_sku": {
+        "type": "string",
+        "metadata": {
+          "displayName": "sku (Log Analytics Workspace)"
+        },
+        "defaultValue": "PerGB2018",
+        "allowedValues": [
+          "PerGB2018"
+        ]
+      },
+      "logAnalyticsWorkspace_dataRetentionInDays": {
+        "type": "int",
+        "metadata": {
+          "displayName": "dataRetentionInDays (Log Analytics Workspace)"
+        },
+        "defaultValue": 90,
+        "allowedValues": []
+      },
+      "logAnalyticsWorkspace_automationAccountName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "automationAccountName (Log Analytics Workspace)"
+        },
+        "allowedValues": []
+      },
+      "storageAccountforCloudShell_storageAccountName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "storageAccountName (Storage Account for Cloud Shell)",
+          "description": "Specifies the name of the Azure Storage account."
+        },
+        "allowedValues": []
+      },
+      "storageAccountforCloudShell_accountType": {
+        "type": "string",
+        "metadata": {
+          "displayName": "accountType (Storage Account for Cloud Shell)",
+          "description": "Storage Account Redundancy / Replication"
+        },
+        "allowedValues": [
+          "Standard_GRS",
+          "Standard_LRS",
+          "Standard_ZRS",
+          "Standard_RAGRS",
+          "Premium_LRS"
+        ]
+      },
+      "storageAccountforDiagnosticLogs_storageAccountName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "storageAccountName (Storage Account for Diagnostic Logs)",
+          "description": "Specifies the name of the Azure Storage account."
+        },
+        "allowedValues": []
+      },
+      "storageAccountforDiagnosticLogs_accountType": {
+        "type": "string",
+        "metadata": {
+          "displayName": "accountType (Storage Account for Diagnostic Logs)",
+          "description": "Storage Account Redundancy / Replication"
+        },
+        "allowedValues": [
+          "Standard_GRS",
+          "Standard_LRS",
+          "Standard_ZRS",
+          "Standard_RAGRS",
+          "Premium_LRS"
+        ]
+      },
+      "storageAccountforArtifacts_storageAccountName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "storageAccountName (Storage Account for Artifacts & DevOps)",
+          "description": "Specifies the name of the Azure Storage account."
+        },
+        "allowedValues": []
+      },
+      "storageAccountforArtifacts_containerName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "containerName (Storage Account for Artifacts & DevOps)",
+          "description": "Specifies the name of the blob container."
+        },
+        "defaultValue": "logs",
+        "allowedValues": []
+      },
+      "storageAccountforArtifacts_accountType": {
+        "type": "string",
+        "metadata": {
+          "displayName": "accountType (Storage Account for Artifacts & DevOps)",
+          "description": "Storage Account Redundancy / Replication"
+        },
+        "allowedValues": [
+          "Standard_GRS",
+          "Standard_LRS",
+          "Standard_ZRS",
+          "Standard_RAGRS",
+          "Premium_LRS"
+        ]
+      },
+      "activitylogs_subscriptionId": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Subscription ID for Activity Logs",
+          "description": "Specifies the ID of the subscription for Activity Logs Routing to Log Analytics"
+        },
+        "allowedValues": []
+      },
+      "activitylogs_workspaceName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Log Analytics Workspace Name for Activity Logs",
+          "description": "Log Analytics Workspace Name for Activity Logs"
+        },
+        "allowedValues": []
+      }
+    },
+    "resourceGroups": {
+      "ResourceGroup": {
+        "location": "westeurope",
+        "metadata": {
+          "displayName": "Core Resource Group"
+        },
+        "dependsOn": [],
+        "tags": {
+          "Environment": "dev",
+          "Service": "Core Resources",
+          "Owner": "michael.rueefli@makeitnoble.com",
+          "OwnerApp": "michael.rueefli@makeitnoble.com",
+          "Notes": ""
+        }
+      }
+    }
+  }
+}

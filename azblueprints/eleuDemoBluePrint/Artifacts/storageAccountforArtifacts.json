@@ -1,0 +1,84 @@
+{
+  "kind": "template",
+  "properties": {
+    "displayName": "Storage Account for Artifacts & DevOps",
+    "description": "",
+    "dependsOn": [],
+    "template": {
+      "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "storageAccountName": {
+          "type": "string",
+          "metadata": {
+            "description": "Specifies the name of the Azure Storage account."
+          }
+        },
+        "accountType": {
+          "type": "string",
+          "allowedValues": [
+            "Standard_GRS",
+            "Standard_LRS",
+            "Standard_ZRS",
+            "Standard_RAGRS",
+            "Premium_LRS"
+          ],
+          "metadata": {
+            "description": "Storage Account Redundancy / Replication"
+          }
+        },
+        "containerName": {
+          "type": "string",
+          "defaultValue": "logs",
+          "metadata": {
+            "description": "Specifies the name of the blob container."
+          }
+        }
+      },
+      "variables": {
+        "location": "[resourceGroup().location]"
+      },
+      "resources": [
+        {
+          "name": "[parameters('storageAccountName')]",
+          "type": "Microsoft.Storage/storageAccounts",
+          "apiVersion": "2019-04-01",
+          "location": "[variables('location')]",
+          "kind": "StorageV2",
+          "sku": {
+            "name": "[parameters('accountType')]",
+            "tier": "Standard"
+          },
+          "properties": {
+            "accessTier": "Hot"
+          },
+          "resources": [
+            {
+              "name": "[concat('default/', parameters('containerName'))]",
+              "type": "blobServices/containers",
+              "apiVersion": "2019-04-01",
+              "properties": {
+                "publicAccess": "Container"
+              },
+              "dependsOn": [
+                "[parameters('storageAccountName')]"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "resourceGroup": "ResourceGroup",
+    "parameters": {
+      "storageAccountName": {
+        "value": "[parameters('storageAccountforArtifacts_storageAccountName')]"
+      },
+      "containerName": {
+        "value": "[parameters('storageAccountforArtifacts_containerName')]"
+      },
+      "accountType": {
+        "value": "[parameters('storageAccountforArtifacts_accountType')]"
+      }
+    }
+  }
+}

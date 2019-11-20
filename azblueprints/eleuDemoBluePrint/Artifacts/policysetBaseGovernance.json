@@ -1,0 +1,99 @@
+{
+    "kind":  "policyAssignment",
+    "properties":  {
+                       "displayName":  "p-ind-basic",
+                       "dependsOn":  [
+
+                                     ],
+                       "policyDefinitionId":  "/providers/Microsoft.Management/managementgroups/p-mag-root/providers/Microsoft.Authorization/policySetDefinitions/beea57d0-b63b-475b-8748-b66ab247e865",
+                       "parameters":  {
+                                          "requirespecifiedtagonresourcegroups_TAGNAME_1":  {
+                                                                                                "value":  "[parameters('requirespecifiedtagonresourcegroups_TAGNAME_1')]"
+                                                                                            },
+                                          "requirespecifiedtagonresourcegroups_TAGNAME_2":  {
+                                                                                                "value":  "[parameters('requirespecifiedtagonresourcegroups_TAGNAME_2')]"
+                                                                                            },
+                                          "requirespecifiedtagonresourcegroups_TAGNAME_3":  {
+                                                                                                "value":  "[parameters('requirespecifiedtagonresourcegroups_TAGNAME_3')]"
+                                                                                            },
+                                          "requirespecifiedtagonresourcegroups_TAGNAME_4":  {
+                                                                                                "value":  "[parameters('requirespecifiedtagonresourcegroups_TAGNAME_4')]"
+                                                                                            },
+                                          "requirespecifiedtagonresourcegroups_TAGNAME_5":  {
+                                                                                                "value":  "[parameters('requirespecifiedtagonresourcegroups_TAGNAME_5')]"
+                                                                                            },
+                                          "classicresources_effect":  {
+                                                                          "value":  "[parameters('classicresources_effect')]"
+                                                                      },
+                                          "requirespecifiedtagonresourcegroups_effect_1":  {
+                                                                                               "value":  "[parameters('requirespecifiedtagonresourcegroups_effect_1')]"
+                                                                                           },
+                                          "requirespecifiedtagonresourcegroups_effect_2":  {
+                                                                                               "value":  "[parameters('requirespecifiedtagonresourcegroups_effect_2')]"
+                                                                                           },
+                                          "requirespecifiedtagonresourcegroups_effect_3":  {
+                                                                                               "value":  "[parameters('requirespecifiedtagonresourcegroups_effect_3')]"
+                                                                                           },
+                                          "requirespecifiedtagonresourcegroups_effect_4":  {
+                                                                                               "value":  "[parameters('requirespecifiedtagonresourcegroups_effect_4')]"
+                                                                                           },
+                                          "requirespecifiedtagonresourcegroups_effect_5":  {
+                                                                                               "value":  "[parameters('requirespecifiedtagonresourcegroups_effect_5')]"
+                                                                                           },
+                                          "appendspecifiedtagfromresourcegroup_TAGNAME_1":  {
+                                                                                                "value":  "[parameters('appendspecifiedtagfromresourcegroup_TAGNAME_1')]"
+                                                                                            },
+                                          "appendspecifiedtagfromresourcegroup_TAGNAME_2":  {
+                                                                                                "value":  "[parameters('appendspecifiedtagfromresourcegroup_TAGNAME_2')]"
+                                                                                            },
+                                          "appendspecifiedtagfromresourcegroup_TAGNAME_3":  {
+                                                                                                "value":  "[parameters('appendspecifiedtagfromresourcegroup_TAGNAME_3')]"
+                                                                                            },
+                                          "appendspecifiedtagfromresourcegroup_TAGNAME_4":  {
+                                                                                                "value":  "[parameters('appendspecifiedtagfromresourcegroup_TAGNAME_4')]"
+                                                                                            },
+                                          "appendspecifiedtagfromresourcegroup_TAGNAME_5":  {
+                                                                                                "value":  "[parameters('appendspecifiedtagfromresourcegroup_TAGNAME_5')]"
+                                                                                            },
+                                          "appendspecifiedtagfromresourcegroup_effect_1":  {
+                                                                                               "value":  "[parameters('appendspecifiedtagfromresourcegroup_effect_1')]"
+                                                                                           },
+                                          "appendspecifiedtagfromresourcegroup_effect_2":  {
+                                                                                               "value":  "[parameters('appendspecifiedtagfromresourcegroup_effect_2')]"
+                                                                                           },
+                                          "appendspecifiedtagfromresourcegroup_effect_3":  {
+                                                                                               "value":  "[parameters('appendspecifiedtagfromresourcegroup_effect_3')]"
+                                                                                           },
+                                          "appendspecifiedtagfromresourcegroup_effect_4":  {
+                                                                                               "value":  "[parameters('appendspecifiedtagfromresourcegroup_effect_4')]"
+                                                                                           },
+                                          "appendspecifiedtagfromresourcegroup_effect_5":  {
+                                                                                               "value":  "[parameters('appendspecifiedtagfromresourcegroup_effect_5')]"
+                                                                                           },
+                                          "resourcelocations_LISTOFALLOWEDLOCATIONS_1":  {
+                                                                                             "value":  "[parameters('resourcelocations_LISTOFALLOWEDLOCATIONS_1')]"
+                                                                                         },
+                                          "resourcegrouplocations_LISTOFALLOWEDLOCATIONS_1":  {
+                                                                                                  "value":  "[parameters('resourcegrouplocations_LISTOFALLOWEDLOCATIONS_1')]"
+                                                                                              },
+                                          "resourcelocations_effect":  {
+                                                                           "value":  "[parameters('resourcelocations_effect')]"
+                                                                       },
+                                          "resourcegrouplocations_effect":  {
+                                                                                "value":  "[parameters('resourcegrouplocations_effect')]"
+                                                                            },
+                                          "allowedvirtualmachineskus":  {
+                                                                            "value":  "[parameters('allowedvirtualmachineskus')]"
+                                                                        },
+                                          "allowedvirtualmachines_effect":  {
+                                                                                "value":  "[parameters('allowedvirtualmachines_effect')]"
+                                                                            },
+                                          "allowedstorageaccountskus":  {
+                                                                            "value":  "[parameters('allowedstorageaccountskus')]"
+                                                                        },
+                                          "allowedstorageaccountskus_effect":  {
+                                                                                   "value":  "[parameters('allowedstorageaccountskus_effect')]"
+                                                                               }
+                                      }
+                   }
+}

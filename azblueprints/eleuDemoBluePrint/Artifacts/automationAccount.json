@@ -1,0 +1,51 @@
+{
+  "kind": "template",
+  "properties": {
+    "displayName": "Automation Account",
+    "description": "",
+    "dependsOn": [],
+    "template": {
+      "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+      "contentVersion": "1.0.0.1",
+      "parameters": {
+        "accountName": {
+          "type": "string"
+        },
+        "accountType": {
+          "type": "string",
+          "allowedValues": [
+            "Free",
+            "Basic"
+          ]
+        }
+      },
+      "variables": {
+        "location": "[resourceGroup().location]"
+      },
+      "resources": [
+        {
+          "name": "[parameters('accountName')]",
+          "type": "Microsoft.Automation/automationAccounts",
+          "apiVersion": "2015-10-31",
+          "properties": {
+            "sku": {
+              "name": "[parameters('accountType')]"
+            }
+          },
+          "location": "[variables('location')]",
+          "tags": {}
+        }
+      ],
+      "outputs": {}
+    },
+    "resourceGroup": "ResourceGroup",
+    "parameters": {
+      "accountName": {
+        "value": "[parameters('automationAccount_accountName')]"
+      },
+      "accountType": {
+        "value": "[parameters('automationAccount_accountType')]"
+      }
+    }
+  }
+}

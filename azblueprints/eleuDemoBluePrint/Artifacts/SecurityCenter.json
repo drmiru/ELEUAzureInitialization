@@ -1,0 +1,97 @@
+{
+  "kind": "template",
+  "properties": {
+    "displayName": "Azure Security Center",
+    "description": "",
+    "dependsOn": [
+      "logAnalyticsWorkSpace"
+    ],
+    "template": {
+      "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
+      "contentVersion": "1.0.0.1",
+      "parameters": {
+        "workspaceName": {
+          "type": "string",
+          "metadata": {
+            "description": "Specify the name of your Log Analytics workspace to collect ASC data."
+          }
+        },
+        "workspaceResourceGroup": {
+          "type": "string",
+          "metadata": {
+            "description": "Specify the resource group where the Log Analytics workspace is deployed."
+          }
+        },
+        "subscriptionId": {
+          "type": "string",
+          "metadata": {
+            "description": "Specify the Azure subscriptionId where the Log Analytics workspace is deployed."
+          }
+        }
+      },
+      "variables": {},
+      "resources": [
+        {
+          "type": "Microsoft.Security/autoProvisioningSettings",
+          "name": "default",
+          "apiVersion": "2017-08-01-preview",
+          "properties": {
+            "autoProvision": "On"
+          }
+        },
+        {
+          "type": "Microsoft.Security/workspaceSettings",
+          "apiVersion": "2017-08-01-preview",
+          "name": "default",
+          "properties": {
+            "workspaceId": "[concat('/subscriptions/', parameters('subscriptionId'), '/resourceGroups/', parameters('workspaceResourceGroup'), '/providers/Microsoft.OperationalInsights/workspaces/', parameters('workspaceName'))]",
+            "scope": "[concat('/subscriptions/', parameters('subscriptionId'))]"
+          }
+        },
+        {
+          "type": "Microsoft.Security/pricings",
+          "apiVersion": "2018-06-01",
+          "name": "VirtualMachines",
+          "properties": {
+            "pricingTier": "Standard",
+            "autoProvision": "On"
+          }
+        },
+        {
+          "type": "Microsoft.Security/pricings",
+          "apiVersion": "2018-06-01",
+          "name": "SqlServers",
+          "dependsOn": [
+            "[concat('Microsoft.Security/pricings/VirtualMachines')]"
+          ],
+          "properties": {
+            "pricingTier": "Free"
+          }
+        },
+        {
+          "type": "Microsoft.Security/pricings",
+          "apiVersion": "2018-06-01",
+          "name": "AppServices",
+          "dependsOn": [
+            "[concat('Microsoft.Security/pricings/SqlServers')]"
+          ],
+          "properties": {
+            "pricingTier": "Standard"
+          }
+        }
+      ],
+      "outputs": {}
+    },
+    "parameters": {
+      "workspaceName": {
+        "value": "[parameters('SecurityCenter_workspaceName')]"
+      },
+      "workspaceResourceGroup": {
+        "value": "[parameters('SecurityCenter_workspaceResourceGroup')]"
+      },
+      "subscriptionId": {
+        "value": "[parameters('SecurityCenter_subscriptionId')]"
+      }
+    }
+  }
+}
