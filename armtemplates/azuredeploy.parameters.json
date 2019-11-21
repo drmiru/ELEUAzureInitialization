@@ -6,16 +6,16 @@
             "value": "westeurope"
         },
         "storageAccountName": {
-            "value": "dstomirugovedemo01"
+            "value": "eleudemosto0001"
         },
         "accountType": {
-            "value": "Standard_ZRS"
+            "value": "Standard_LRS"
         },
-        "storageKind": {
+        "kind": {
             "value": "StorageV2"
         },
         "accessTier": {
-            "value": "Cool"
-        }
+            "value": "Hot"
+        }        
     }
 }

@@ -1,0 +1,49 @@
+# Blueprint Build & Deploy Pipeline
+
+trigger:
+  branches:
+    include:
+    - master
+  paths:
+    include:
+    - azblueprints/*
+
+stages:
+- stage: BuildBlueprints
+  jobs:
+  - job: BuildBlueprints
+    pool:
+      vmImage: 'ubuntu-latest'
+    continueOnError: false
+    steps:
+    - task: AzurePowerShell@4
+      inputs:
+        azureSubscription: 'p-spi-azdevops'
+        ScriptType: 'FilePath'
+        ScriptPath: './scripts/Start-BluePrintBuild.ps1'
+        ScriptArguments: '-BluePrintFolder ./azblueprints'
+        FailOnStandardError: true
+        azurePowerShellVersion: 'LatestVersion'
+    - publish: $(System.DefaultWorkingDirectory)
+      artifact: blueprints     
+
+
+- stage: DeployBlueprints
+  dependsOn: BuildBlueprints
+  jobs:
+  - job: DeployBlueprints
+    pool:
+      vmImage: 'ubuntu-latest'
+    continueOnError: true
+    steps:
+    - download: current
+      artifact: blueprints
+    - task: AzurePowerShell@4
+      inputs:
+        azureSubscription: 'p-spi-azdevops'
+        ScriptType: 'FilePath'
+        ScriptPath: './scripts/Start-BluePrintDeployment.ps1'
+        ScriptArguments: '-BluePrintFolder ./azblueprints'
+        FailOnStandardError: true
+        azurePowerShellVersion: 'LatestVersion'
+

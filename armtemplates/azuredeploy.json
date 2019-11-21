@@ -18,7 +18,8 @@
             "type": "string"
         },
         "supportsHttpsTrafficOnly": {
-            "type": "bool"
+            "type": "bool",
+            "defaultValue": true
         }
     },
     "variables": {},
@@ -29,7 +30,7 @@
             "apiVersion": "2019-06-01",
             "location": "[parameters('location')]",
             "properties": {
-                "accessTier": "cool",
+                "accessTier": "[parameters('accessTier')]",
                 "supportsHttpsTrafficOnly": "[parameters('supportsHttpsTrafficOnly')]"
             },
             "dependsOn": [],
